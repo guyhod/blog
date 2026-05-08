@@ -1,0 +1,62 @@
+baseURL = "https://www.guyhod.com/"
+languageCode = "en-us"
+theme = "terminal"
+paginate = 5
+
+[params]
+  # Theme: red, blue, green, pink, orange, or a hex code (e.g. "#22ff22")
+  themeColor = "green"
+
+  # Number of posts shown on a list page
+  contentTypeName = "posts"
+
+  # Show two top-level menu entries on small screens before "Show more"
+  showMenuItems = 2
+
+  # Center the layout
+  centerTheme = true
+
+  # Full-width layout off (looks more terminal-like)
+  fullWidthTheme = false
+
+  # Show last-updated dates
+  showLastUpdated = false
+
+  # Read-more / pagination labels
+  readMore = "read more"
+  readOtherPosts = "read other posts"
+
+  # Show only the post summary on list pages
+  showFullContent = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "guyhod"
+    subtitle = "notes from the terminal"
+    owner = "guyhod"
+    keywords = ""
+    copyright = ""
+    menuMore = "show more"
+
+    [languages.en.params.logo]
+      logoText = "guyhod"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "posts"
+        url = "/posts"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # allow raw HTML in markdown (for ASCII art, embeds, etc.)
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
