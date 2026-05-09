@@ -8,7 +8,7 @@ paginate = 5
   themeColor = "green"
 
   # Number of posts shown on a list page
-  contentTypeName = "posts"
+  contentTypeName = "notes"
 
   # Show two top-level menu entries on small screens before "Show more"
   showMenuItems = 2
@@ -40,7 +40,7 @@ paginate = 5
     menuMore = "show more"
 
     [languages.en.params.logo]
-      logoText = "guyhod"
+      logoText = "Notes by Guy Hod"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -50,8 +50,8 @@ paginate = 5
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "posts"
-        name = "posts"
-        url = "/posts"
+        name = "notes"
+        url = "/notes"
 
 [markup]
   [markup.goldmark]
